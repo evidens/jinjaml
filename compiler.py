@@ -33,7 +33,7 @@ def init_parser():
     parser = argparse.ArgumentParser(description="Feeds a yaml config file into a jinja2 template")
     parser.add_argument('conf_name', type=str, help="Path to the configuration file to load")
     parser.add_argument('template_name', type=str, help="Template file to render into")
-    parser.add_argument('--template-dir', type=str,
+    parser.add_argument('-t', '--template-dir', type=str,
                         help="""Directory where templates are stored (assumes dir from which script is run)""",
                         default='.')
     parser.add_argument('-o', '--output', type=str, help="Output file")
